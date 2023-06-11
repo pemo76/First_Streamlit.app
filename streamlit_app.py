@@ -99,19 +99,3 @@ streamlit.stop()
 
 
 
-
-
-File "/home/appuser/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 552, in _run_script
-    exec(code, module.__dict__)
-File "/app/first_streamlit.app/streamlit_app.py", line 93, in <module>
-    streamlit.dataframe(back_from_function)
-File "/home/appuser/venv/lib/python3.9/site-packages/streamlit/runtime/metrics_util.py", line 356, in wrapped_func
-    result = non_optional_func(*args, **kwargs)
-File "/home/appuser/venv/lib/python3.9/site-packages/streamlit/elements/dataframe_selector.py", line 180, in dataframe
-    return self.dg._arrow_dataframe(
-File "/home/appuser/venv/lib/python3.9/site-packages/streamlit/runtime/metrics_util.py", line 356, in wrapped_func
-    result = non_optional_func(*args, **kwargs)
-File "/home/appuser/venv/lib/python3.9/site-packages/streamlit/elements/arrow.py", line 180, in _arrow_dataframe
-    data_df = type_util.convert_anything_to_df(data, ensure_copy=False)
-File "/home/appuser/venv/lib/python3.9/site-packages/streamlit/type_util.py", line 549, in convert_anything_to_df
-    raise errors.StreamlitAPIException(
